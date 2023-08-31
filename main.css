@@ -1,0 +1,24 @@
+/* Estilos generales de la tabla */
+table {
+   border-collapse: collapse;
+   width: 100%;
+}
+
+table, th, td {
+   border: 1px solid #ccc;
+}
+
+th, td {
+   padding: 8px;
+   text-align: left;
+}
+
+/* Estilos para filas impares */
+tr:nth-child(odd) {
+   background-color: #f0f0f0; /* Color de fondo para filas impares (gama de pasteles) */
+}
+
+/* Estilos para columnas impares */
+td:nth-child(odd) {
+   background-color: #c0e0ff; /* Color de fondo para columnas impares (azules) */
+}
