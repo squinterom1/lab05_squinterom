@@ -13,7 +13,8 @@ archivoSelect.addEventListener("change", function () {
     xhr.onreadystatechange = function () {
         if (xhr.readyState === 4 && xhr.status === 200) {
             // Asigna el contenido del archivo al elemento <pre>.
-            contenidoElement.textContent = xhr.responseText;
+            //contenidoElement.textContent = xhr.responseText;
+            contenidoElement.innerHTML = xhr.responseText;
         }
     };
 
