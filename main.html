@@ -3,14 +3,40 @@
 <head>
     <title>Administración IBM i - Lab5</title>
     <link rel="stylesheet" type="text/css" href="main.css"> <!-- Enlace al archivo CSS -->
+    </head>
+    <style>
+    #customers {
+        font-family: Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+      
+      #customers td, #customers th {
+        border: 1px solid #ddd;
+        padding: 8px;
+      }
+      
+      #customers tr:nth-child(even){background-color: #f2f2f2;}
+      
+      #customers tr:hover {background-color: #ddd;}
+      
+      #customers th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: #04AA6D;
+        color: white;
+      }
+    </style>
+    </head>
 </head>
 <body>
     <h1>LABUSERxx - Reportes de monitoreo</h1>
 
     <label for="archivoSelect">Selecciona un informe:</label>
     <select id="archivoSelect">
-        <option value="archivo1.txt">Archivo 1</option>
-        <option value="archivo2.txt">Archivo 2</option>
+        <option value="https://hostname:10050/archivo1.txt">Archivo 1</option>
+        <option value="https://hostname:10050/archivo2.txt">Archivo 2</option>
         <!-- Agrega más opciones según sea necesario -->
     </select>
 
